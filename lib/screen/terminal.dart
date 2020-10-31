@@ -26,7 +26,7 @@ class _LcmdState extends State<Lcmd> {
   firebasedata(cmd) async {
      useremail = auth.currentUser.email;
      fbconn = FirebaseFirestore.instance;
-    var url = "http://192.168.43.55/cgi-bin/web.py?x=${cmd}";
+    var url = "http://192.168.43.83/cgi-bin/web.py?x=${cmd}";
     var response = await http.get(url);
 
     setState(() {
